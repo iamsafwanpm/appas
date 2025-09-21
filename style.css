@@ -1,0 +1,85 @@
+    :root {
+      --primary-color: #15d1d4;
+      --dark-color: #000000;
+      --light-text: #f1f1f1;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--dark-color);
+      color: var(--light-text);
+    }
+    .navbar, footer {
+      background-color: var(--dark-color) !important;
+    }
+    .navbar-brand, .nav-link {
+      color: var(--light-text) !important;
+    }
+    .nav-link:hover {
+      color: var(--primary-color) !important;
+    }
+    .hero {
+      background: url('122.jpg') center/cover no-repeat;
+      height: 190vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero > div {
+      position: relative;
+      z-index: 2;
+      color: var(--light-text);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    .btn-custom {
+      background-color: var(--primary-color);
+      color: black;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #0fb6ba;
+      color: white;
+    }
+    h2 {
+      color: var(--primary-color);
+    }
+    .service-card {
+      background-color: #111111;
+      color: var(--light-text);
+      transition: 0.3s;
+      border-top: 4px solid var(--primary-color);
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 20px rgba(21,209,212,0.4);
+    }
+    .blockquote {
+      border-left: 5px solid var(--primary-color);
+      padding-left: 15px;
+    }
+    .gallery-img {
+      border: 3px solid var(--primary-color);
+      transition: 0.3s;
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(21,209,212,0.6);
+    }
+    footer {
+      color: var(--light-text);
+    }
+    .logo{
+        width: 80px;
+        height :80px;
+    }

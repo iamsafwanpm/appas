@@ -19,7 +19,7 @@
     }
     .hero {
       background: url('122.jpg') center/cover no-repeat;
-      background: url('122.jpg') center/cover no-repeat;
+      background-attachment: fixed;
       height: 190vh;
       display: flex;
       align-items: center;
